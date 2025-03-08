@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>LaslesVPN</title>
   </head>
@@ -325,7 +329,164 @@
             <img src="./assests/images/map.png" alt="Map" />
           </div>
         </section>
+
+        <section class="services-section container swiper">
+          <div class="services swiper-wrapper">
+            <div class="services-item swiper-slide">
+              <img src="./assests/images/services/netflix.webp" alt="" />
+            </div>
+            <div class="services-item swiper-slide">
+              <img src="./assests/images/services/reddit.webp" alt="" />
+            </div>
+            <div class="services-item swiper-slide">
+              <img src="./assests/images/services/amazon.webp" alt="" />
+            </div>
+            <div class="services-item swiper-slide">
+              <img src="./assests/images/services/discord.webp" alt="" />
+            </div>
+            <div class="services-item swiper-slide">
+              <img src="./assests/images/services/spotify.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews-section container">
+          <div class="section-title">
+            <h2>Trusted by Thousands of Happy Customer</h2>
+          </div>
+          <div class="section-description">
+            <p>
+              These are the stories of our customers who have joined us with
+              great pleasure when using this crazy feature.
+            </p>
+          </div>
+          <div class="reviews swiper">
+            <div class="reviews-container swiper-wrapper">
+              <div class="reviews-item swiper-slide">
+                <div class="review-header">
+                  <div class="review-header-user">
+                    <div class="review-header-user-image">
+                      <img src="./assests/images/users/user-0.png" alt="" />
+                    </div>
+                    <div class="review-header-user-info">
+                      <p class="review-header-user-info-name">
+                        Mykhailo Honchar
+                      </p>
+                      <p class="review-header-user-info-location">
+                        Dnipro, Ukraine
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-header-stars">
+                    <p class="review-header-stars-rate">5.0</p>
+                    <img src="./assests/icons/star.svg" alt="Star Icon" />
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p>
+                    "This VPN makes my ISP think I live in Switzerland, work in
+                    Japan, and chill in Iceland. If only it could hide my
+                    shopping from my wife too!".
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews-item swiper-slide">
+                <div class="review-header">
+                  <div class="review-header-user">
+                    <div class="review-header-user-image">
+                      <img src="./assests/images/users/user-1.png" alt="" />
+                    </div>
+                    <div class="review-header-user-info">
+                      <p class="review-header-user-info-name">Viezh Robert</p>
+                      <p class="review-header-user-info-location">
+                        Warsaw, Poland
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-header-stars">
+                    <p class="review-header-stars-rate">4.5</p>
+                    <img src="./assests/icons/star.svg" alt="Star Icon" />
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p>
+                    “Wow... I am very happy to use this VPN, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems. LaslesVPN always the best”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews-item swiper-slide">
+                <div class="review-header">
+                  <div class="review-header-user">
+                    <div class="review-header-user-image">
+                      <img src="./assests/images/users/user-2.png" alt="" />
+                    </div>
+                    <div class="review-header-user-info">
+                      <p class="review-header-user-info-name">Kim Young Jou</p>
+                      <p class="review-header-user-info-location">
+                        Shanxi, China
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-header-stars">
+                    <p class="review-header-stars-rate">4.7</p>
+                    <img src="./assests/icons/star.svg" alt="Star Icon" />
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p>
+                    “I like it because I like to travel far and still can
+                    connect with high speed.”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews-item swiper-slide">
+                <div class="review-header">
+                  <div class="review-header-user">
+                    <div class="review-header-user-image">
+                      <img src="./assests/images/users/user-3.png" alt="" />
+                    </div>
+                    <div class="review-header-user-info">
+                      <p class="review-header-user-info-name">Kim Young Jou</p>
+                      <p class="review-header-user-info-location">
+                        Seoul, South Korea
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-header-stars">
+                    <p class="review-header-stars-rate">4.3</p>
+                    <img src="./assests/icons/star.svg" alt="Star Icon" />
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p>
+                    “This is very unusual for my business that currently
+                    requires a virtual private network that has high security.”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-controls">
+            <div class="reviews-pagination"></div>
+            <div class="reviews-navigation">
+              <button class="button reviews-button reviews-button-prev">
+                <
+              </button>
+              <button class="button reviews-button reviews-button-next">
+                >
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
