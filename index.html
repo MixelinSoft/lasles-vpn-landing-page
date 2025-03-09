@@ -15,9 +15,46 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <title>LaslesVPN</title>
   </head>
   <body>
+    <div class="modal">
+      <form class="modal-form container">
+        <h2 class="modal-title">Enter your email to get started!</h2>
+        <div class="modal-form-group">
+          <label class="modal-input-label">Email</label>
+          <input class="modal-input-text" type="text" placeholder="Email" />
+        </div>
+        <div class="modal-form-group">
+          <label class="modal-input-label">Password</label>
+          <input
+            class="modal-input-text"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="modal-checkbox-group">
+          <input class="modal-checkbox" type="checkbox" />
+          <span>Remember Me</span>
+        </div>
+        <button class="button" data-portfolio="">Sign In</button>
+      </form>
+    </div>
     <header>
       <nav class="nav container">
         <div class="logo">
@@ -43,8 +80,10 @@
           <li class="nav-menu-item" data-scroll="help">Help</li>
         </ul>
         <div class="nav-auth">
-          <button class="nav-auth-button sign-in-button">Sign In</button>
-          <button class="nav-auth-button button">Sign Up</button>
+          <button data-sign="" class="nav-auth-button sign-in-button">
+            Sign In
+          </button>
+          <button data-sign="" class="nav-auth-button button">Sign Up</button>
         </div>
       </nav>
     </header>
@@ -160,7 +199,7 @@
           </div>
 
           <div class="plans">
-            <div class="plan-card">
+            <div data-portfolio="" class="plan-card">
               <div class="plan-description">
                 <div class="plan-promo">
                   <div class="plan-image">
@@ -213,7 +252,7 @@
               </div>
             </div>
 
-            <div class="plan-card">
+            <div data-portfolio="" class="plan-card">
               <div class="plan-description">
                 <div class="plan-promo">
                   <div class="plan-image">
@@ -273,7 +312,7 @@
               </div>
             </div>
 
-            <div class="plan-card">
+            <div data-portfolio="" class="plan-card">
               <div class="plan-description">
                 <div class="plan-promo">
                   <div class="plan-image">
@@ -522,7 +561,10 @@
               </p>
             </div>
             <div class="subscribe-card-button">
-              <button class="button filled-button subscribe-button">
+              <button
+                data-portfolio=""
+                class="button filled-button subscribe-button"
+              >
                 Subscribe Now
               </button>
             </div>
@@ -548,21 +590,21 @@
               features and has high security.
             </div>
             <div class="footer-socials">
-              <a class="footer-socials-link" href="#">
+              <a data-portfolio="" class="footer-socials-link" href="#">
                 <img
                   class="footer-socials-icon"
                   src="./assests/icons/socials/facebook.svg"
                   alt="Facebook Icon"
                 />
               </a>
-              <a class="footer-socials-link" href="#">
+              <a data-portfolio="" class="footer-socials-link" href="#">
                 <img
                   class="footer-socials-icon"
                   src="./assests/icons/socials/twitter.svg"
                   alt="Facebook Icon"
                 />
               </a>
-              <a class="footer-socials-link" href="#">
+              <a data-portfolio="" class="footer-socials-link" href="#">
                 <img
                   class="footer-socials-icon"
                   src="./assests/icons/socials/Instagram.svg"
@@ -575,26 +617,54 @@
           <div class="footer-block footer-links">
             <div class="footer-block-column">
               <div class="footer-block-column-title">Product</div>
-              <a class="footer-block-column-link" href="#">Download</a>
-              <a class="footer-block-column-link" href="#">Pricing</a>
-              <a class="footer-block-column-link" href="#">Locations</a>
-              <a class="footer-block-column-link" href="#">Server</a>
-              <a class="footer-block-column-link" href="#">Countries</a>
-              <a class="footer-block-column-link" href="#">Blog</a>
+              <a data-portfolio="" class="footer-block-column-link" haef="#"
+                >Download</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Pricing</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Locations</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Server</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Countries</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Blog</a
+              >
             </div>
             <div class="footer-block-column">
               <div class="footer-block-column-title">Engage</div>
-              <a class="footer-block-column-link" href="#">LaslesVPN ?</a>
-              <a class="footer-block-column-link" href="#">FAQ</a>
-              <a class="footer-block-column-link" href="#">Tutorials</a>
-              <a class="footer-block-column-link" href="#">About Us</a>
-              <a class="footer-block-column-link" href="#">Privacy Policy</a>
-              <a class="footer-block-column-link" href="#">Terms of Service</a>
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >LaslesVPN ?</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >FAQ</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Tutorials</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >About Us</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Privacy Policy</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Terms of Service</a
+              >
             </div>
             <div class="footer-block-column">
               <div class="footer-block-column-title">Earn Money</div>
-              <a class="footer-block-column-link" href="#">Affiliate</a>
-              <a class="footer-block-column-link" href="#">Become Partner</a>
+              <a data-portfolio="" class="footer-block-column-link" hraf="#"
+                >Affiliate</a
+              >
+              <a data-portfolio="" class="footer-block-column-link" href="#"
+                >Become Partner</a
+              >
             </div>
           </div>
         </div>

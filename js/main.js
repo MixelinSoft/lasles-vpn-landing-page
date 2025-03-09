@@ -2,6 +2,10 @@
 const menuButton = document.querySelector('.menu-button');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('[data-scroll]');
+const goToPortfolioButtons = document.querySelectorAll('[data-portfolio]');
+const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal-form');
+const signButtons = document.querySelectorAll('[data-sign]');
 
 // Swiper For Services
 const servicesSwiper = new Swiper('.services-section', {
@@ -69,5 +73,23 @@ navLinks.forEach((link) => {
     targetElement.scrollIntoView({
       behavior: 'smooth',
     });
+  });
+});
+// Modal
+signButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    modal.classList.add('show');
+  });
+});
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+  }
+});
+
+// Protfolio Open
+goToPortfolioButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    window.open('https://mixelinsoft.netlify.app/');
   });
 });

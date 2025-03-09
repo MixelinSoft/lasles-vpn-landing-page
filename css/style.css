@@ -79,6 +79,63 @@ section {
   );
 }
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-form {
+  background-color: #fff;
+  max-width: 360px;
+  padding: 24px;
+  border-radius: 10px;
+  border: 2px solid var(--liteGrey);
+}
+.modal-title {
+  text-align: center;
+}
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.modal-checkbox-group {
+  margin-bottom: 20px;
+}
+.modal-input-label {
+  margin-bottom: 8px;
+}
+.modal-input-text {
+  padding: 10px;
+  border: 1px solid var(--liteGrey);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.modal-input-text:focus {
+  outline: none;
+  border: 1px solid var(--red);
+}
+.modal-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid var(--liteGrey);
+  border-radius: 5px;
+}
+
 /* Menu */
 .menu-button {
   display: none;
