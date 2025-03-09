@@ -29,7 +29,7 @@ const servicesSwiper = new Swiper('.services-section', {
       speed: 2000,
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.7,
     },
   },
 });

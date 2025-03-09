@@ -136,7 +136,7 @@
   }
 }
 @media (max-width: 991px) {
-  .body {
+  body {
     font-size: 14px;
   }
   .button {
@@ -166,7 +166,6 @@
   }
   .section-description {
     margin-bottom: 10px;
-    color: var(--grey);
   }
   .section-description p {
     line-height: 1.3;
@@ -201,7 +200,6 @@
   .promo-card-item-icon {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     margin-right: 24px;
   }
   .promo-card-item-icon img {
@@ -223,8 +221,6 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 1.3;
-  }
-  .promo-features-info-title {
     margin: 0 0 8px 0;
   }
   .promo-features-info-description {
@@ -345,5 +341,267 @@
   .footer-block-column-link {
     font-size: 14px;
     line-height: 1.2;
+  }
+}
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 4px;
+    padding: 8px 0 0 0;
+  }
+  .section-title h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .section-description {
+    margin-bottom: 6px;
+  }
+  .section-description p {
+    font-size: 12px;
+  }
+  .plan-card {
+    width: 160px;
+    height: 300px;
+    padding: 12px 0;
+  }
+  .plan-image img {
+    height: 64px;
+  }
+  .plan-list {
+    margin-top: 8px;
+  }
+  .plan-title {
+    line-height: 1.1;
+    margin-top: 8px;
+  }
+  .plan-list-item img {
+    width: 16px;
+    margin-right: 2px;
+  }
+  .plan-list-item-text {
+    font-size: 10px;
+  }
+  .plan-price {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .plan-buy-button {
+    width: 120px;
+  }
+  .subscribe-card {
+    width: 90%;
+  }
+  .footer-container {
+    padding-top: 60px;
+    height: 320px;
+  }
+  .footer-block-column-title {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .footer-block-column-link {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 575px) {
+  body {
+    font-size: 12px;
+  }
+  .button {
+    height: 18px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .section-title {
+    margin-bottom: 6px;
+    padding: 6px 0 0 0;
+  }
+  .section-title h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .section-description {
+    margin-bottom: 6px;
+  }
+  .section-description p {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  .nav {
+    height: 48px;
+  }
+  .logo-image {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+  }
+  .logo-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .sign-in-button {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  .promo-content {
+    padding-top: 0;
+    padding-bottom: 8px;
+    flex-direction: column-reverse;
+  }
+  .promo-content-block {
+    width: 100%;
+  }
+  .promo-content-title {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .promo-content-description {
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .promo-content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo-content-button {
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .promo-card {
+    margin-bottom: 8px;
+  }
+  .promo-card-item-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+  .promo-item-num {
+    font-size: 12px;
+    margin: 0;
+  }
+  .promo-item-type {
+    font-size: 10px;
+    line-height: 1;
+  }
+  .promo-features {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .promo-features-block {
+    width: 100%;
+  }
+  .promo-features-info-title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 4px 0;
+  }
+  .promo-features-info-description {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .promo-features-info-list-item {
+    font-size: 14px;
+  }
+  .promo-features-info-list-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .promo-features-info-list-item-icon {
+    margin-right: 4px;
+    width: 14px;
+  }
+  .plans {
+    flex-direction: column-reverse;
+  }
+  .plan-card {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+  }
+  .plan-card:not(:first-child) {
+    margin-bottom: 8px;
+  }
+  .plan-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    margin-right: 8px;
+  }
+  .plan-description {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .plan-list {
+    margin-top: 0;
+  }
+  .plan-list-item-text {
+    font-size: 14px;
+  }
+  .plan-buy-button {
+    width: 164px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .services {
+    height: 40px;
+  }
+  .services img {
+    max-height: 40px;
+  }
+  .reviews-controls {
+    justify-content: center;
+  }
+  .reviews-navigation {
+    display: none;
+  }
+  .subscribe-card-text {
+    max-width: auto;
+  }
+  .subscribe-card-title {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  .subscribe-card-description {
+    font-size: 10px;
+    line-height: 1;
+  }
+  .subscribe-button {
+    width: 100px;
+    height: 24px;
+    font-size: 10px;
+  }
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    padding-top: 60px;
+  }
+  .footer-block {
+    width: 100%;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .footer-description {
+    max-width: auto;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
   }
 }
