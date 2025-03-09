@@ -148,16 +148,17 @@
     position: relative;
   }
   .nav-menu {
-    display: none;
+    visibility: hidden;
     transition: height 0.3s ease;
   }
   .nav-menu.show {
+    visibility: visible;
     display: block;
     position: absolute;
     padding: 14px;
     left: 0;
     right: 0;
-    top: 64px;
+    top: 49px;
     height: auto;
     background-color: #fff;
     z-index: 100;
@@ -488,6 +489,9 @@
   .section-description p {
     font-size: 10px;
     line-height: 1.1;
+  }
+  .nav-menu.show {
+    top: 34px;
   }
   .nav {
     height: 48px;
