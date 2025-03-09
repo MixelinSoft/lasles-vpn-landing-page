@@ -4,7 +4,6 @@
   --liteGrey: rgba(238, 239, 242, 1);
   --black: rgba(11, 19, 42, 1);
   --red: rgba(245, 56, 85, 1);
-  /*  #f53855ff; */
   --pink: rgba(255, 236, 236, 1);
 }
 
@@ -138,6 +137,7 @@ body {
   font-size: 50px;
   font-weight: 500;
   line-height: 70px;
+  max-width: 500px;
 }
 .promo-content-title-bold {
   font-weight: 700;
@@ -147,6 +147,9 @@ body {
   line-height: 30px;
   margin-bottom: 50px;
   color: var(--grey);
+}
+.promo-content-image img {
+  width: 100%;
 }
 .promo-card {
   display: flex;
@@ -521,6 +524,7 @@ body {
 }
 .footer-socials {
   display: flex;
+  margin-bottom: 30px;
 }
 .footer-socials-link {
   display: flex;
@@ -532,7 +536,6 @@ body {
   background-color: #fff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  margin-bottom: 30px;
 }
 .footer-socials-link:not(:last-child) {
   margin-right: 20px;
