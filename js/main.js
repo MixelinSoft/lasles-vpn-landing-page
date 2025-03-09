@@ -12,6 +12,26 @@ const servicesSwiper = new Swiper('.services-section', {
   speed: 5000,
   allowTouchMove: false,
   simulateTouch: false,
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+      speed: 4000,
+    },
+    556: {
+      slidesPerView: 2.5,
+      speed: 3000,
+    },
+    380: {
+      slidesPerView: 2,
+      speed: 2000,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 const reviewsSwiper = new Swiper('.reviews', {
