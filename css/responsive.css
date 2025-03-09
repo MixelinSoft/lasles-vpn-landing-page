@@ -148,6 +148,7 @@
     position: relative;
   }
   .nav-menu {
+    display: none;
     visibility: hidden;
     transition: height 0.3s ease;
   }
@@ -450,7 +451,7 @@
     width: 120px;
   }
   .subscribe-card {
-    width: 90%;
+    width: 97%;
   }
   .footer-container {
     padding-top: 60px;
