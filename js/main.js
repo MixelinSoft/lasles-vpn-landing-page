@@ -1,3 +1,9 @@
+// Elements
+const menuButton = document.querySelector('.menu-button');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('[data-scroll]');
+
+// Swiper For Services
 const servicesSwiper = new Swiper('.services-section', {
   direction: 'horizontal',
   loop: true,
@@ -33,7 +39,7 @@ const servicesSwiper = new Swiper('.services-section', {
     },
   },
 });
-
+// Swiper For Reviews
 const reviewsSwiper = new Swiper('.reviews', {
   direction: 'horizontal',
   loop: true,
@@ -47,4 +53,21 @@ const reviewsSwiper = new Swiper('.reviews', {
     type: 'bullets',
     clickable: true,
   },
+});
+
+// Menu
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('active');
+  navMenu.classList.toggle('show');
+});
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    menuButton.classList.remove('active');
+    navMenu.classList.remove('show');
+    const targetSection = link.getAttribute('data-scroll');
+    const targetElement = document.getElementById(targetSection);
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
 });

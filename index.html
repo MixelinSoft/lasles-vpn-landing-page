@@ -21,6 +21,11 @@
     <header>
       <nav class="nav container">
         <div class="logo">
+          <div class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <img
             class="logo-image"
             src="./assests/icons/logo.svg"
@@ -31,11 +36,11 @@
           </div>
         </div>
         <ul class="nav-menu">
-          <li class="nav-menu-item">About</li>
-          <li class="nav-menu-item">Features</li>
-          <li class="nav-menu-item">Pricing</li>
-          <li class="nav-menu-item">Testimonials</li>
-          <li class="nav-menu-item">Help</li>
+          <li class="nav-menu-item" data-scroll="about">About</li>
+          <li class="nav-menu-item" data-scroll="features">Features</li>
+          <li class="nav-menu-item" data-scroll="pricing">Pricing</li>
+          <li class="nav-menu-item" data-scroll="testimonials">Testimonials</li>
+          <li class="nav-menu-item" data-scroll="help">Help</li>
         </ul>
         <div class="nav-auth">
           <button class="nav-auth-button sign-in-button">Sign In</button>
@@ -45,7 +50,7 @@
     </header>
 
     <main>
-      <section class="promo-section container">
+      <section id="about" class="promo-section container">
         <div class="promo-content">
           <div class="promo-content-info promo-content-block">
             <h1 class="promo-content-title">
@@ -56,7 +61,10 @@
               Provide a network for all your needs with ease and fun using
               LaslesVPN discover interesting features from us.
             </p>
-            <button class="button filled-button promo-content-button">
+            <button
+              data-scroll="pricing"
+              class="button filled-button promo-content-button"
+            >
               Get Started
             </button>
           </div>
@@ -93,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="promo-features">
+        <div id="features" class="promo-features">
           <div class="promo-features-image promo-features-block">
             <img src="./assests/images/features-image.png" alt="" />
           </div>
@@ -140,7 +148,7 @@
       </section>
 
       <div class="gradient">
-        <section class="plans-section container">
+        <section id="pricing" class="plans-section container">
           <div class="section-title">
             <h2>Choose Your Plan</h2>
           </div>
@@ -369,7 +377,7 @@
           </div>
         </section>
 
-        <section class="reviews-section container">
+        <section id="testimonials" class="reviews-section container">
           <div class="section-title">
             <h2>Trusted by Thousands of Happy Customer</h2>
           </div>
@@ -521,7 +529,8 @@
           </div>
         </section>
       </div>
-      <footer class="footer gradient">
+
+      <footer id="help" class="footer gradient">
         <div class="footer-container container">
           <div class="footer-block footer-info">
             <div class="logo">

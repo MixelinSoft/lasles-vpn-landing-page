@@ -79,6 +79,11 @@ section {
   );
 }
 
+/* Menu */
+.menu-button {
+  display: none;
+}
+
 /* Nav */
 .nav {
   height: 135px;
@@ -288,7 +293,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .plan-list {
   padding: 0;

@@ -144,8 +144,69 @@
     padding: 0 18px;
     font-size: 14px;
   }
+  .nav {
+    position: relative;
+  }
   .nav-menu {
     display: none;
+    transition: height 0.3s ease;
+  }
+  .nav-menu.show {
+    display: block;
+    position: absolute;
+    padding: 14px;
+    left: 0;
+    right: 0;
+    top: 64px;
+    height: auto;
+    background-color: #fff;
+    z-index: 100;
+    border: 2px solid var(--liteGrey);
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+  }
+  .nav-menu-item {
+    font-size: 16px;
+  }
+  .nav-menu-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .menu-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-right: 12px;
+  }
+  .menu-button .bar {
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+  }
+  .menu-button .bar:nth-of-type(2) {
+    top: calc(50% - 9px);
+  }
+  .menu-button .bar:nth-of-type(3) {
+    top: calc(50% + 9px);
+  }
+  .menu-button.active .bar:nth-of-type(1) {
+    display: none;
+  }
+  .menu-button.active .bar:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+  .menu-button.active .bar:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
   }
   .button:hover {
     box-shadow: 0px 7px 20px rgba(245, 56, 85, 0.3);
@@ -446,7 +507,7 @@
   }
   .promo-content {
     padding-top: 0;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
     flex-direction: column-reverse;
   }
   .promo-content-block {
@@ -460,7 +521,7 @@
   .promo-content-description {
     text-align: center;
     line-height: 1.1;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
   }
   .promo-content-info {
     display: flex;
@@ -500,11 +561,14 @@
     font-size: 18px;
     line-height: 1.2;
     margin: 0 0 4px 0;
+    width: 100%;
+    text-align: center;
   }
   .promo-features-info-description {
     font-size: 12px;
     line-height: 1.2;
     text-align: center;
+    width: 100%;
   }
   .promo-features-info-list-item {
     font-size: 14px;
